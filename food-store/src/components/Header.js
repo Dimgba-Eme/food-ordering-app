@@ -4,12 +4,15 @@ import './header.scss'
 
 const Header = () => {
     return (
-        <div className='header-wrapper'>
+        <header className='header-wrapper'>
             <div className='header-inner'>
-
+                <div className='header-logo'>
+                   <h1>Eatty<span>Filly</span></h1>
+                </div>
                 <Navbar />
+               
             </div>
-        </div>
+        </header>
     )
 }
 
