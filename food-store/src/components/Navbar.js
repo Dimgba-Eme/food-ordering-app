@@ -4,8 +4,8 @@ import './navbar.scss'
 const Navbar = () => {
     return (
         <>
-            <nav>
-                <ul>
+            <nav className='nav-container'>
+                <ul className='nav-inner'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Menu</li>
