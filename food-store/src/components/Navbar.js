@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.scss'
 import menu_icon from '../assets/icons/hamburger_menu.svg'
 import cart_icon from '../assets/icons/shopping-bag.png'
 import close_icon from '../assets/icons/close_icon.png'
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <img src={menu_icon} alt='menu icon' className='menu-icon' />
