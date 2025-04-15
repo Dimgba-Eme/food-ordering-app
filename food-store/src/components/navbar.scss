@@ -1,5 +1,46 @@
-.nav-container {
-    .nav-inner {
-        display: none;
+@media (max-width: 800px) {
+
+    .menu-icon {
+        width: 30px;
+        position: absolute;
+        margin-right: auto;
+    }
+
+    .nav-wrapper {
+        border: 1px solid red;
+        margin-left: auto;
+        display: flex;
+
+        nav {
+            .nav-inner {
+                display: none;
+
+                .close-icon {
+                    width: 20px;
+                }
+
+                .nav-link {}
+            }
+        }
+
+        .cart-icon-container {
+               position: relative;
+            .cart-icon {
+                width: 30px;
+                margin-left: auto;
+            }
+
+            .item-count {
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              background-color: tomato;
+              color: #fff;
+              width: 18px;
+              height: 18px;
+              border-radius: 50%;
+              text-align: center;
+            }
+        }
     }
 }

@@ -1,1 +1,31 @@
-/*# sourceMappingURL=header.css.map */
+@media (max-width: 800px) {
+  .header-wrapper {
+    padding: 0 10px;
+  }
+  .header-wrapper .header-inner {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .header-wrapper .header-inner .header-logo-container {
+    border: 1px solid green;
+    margin-left: auto;
+  }
+  .header-wrapper .header-inner .header-logo-container .header-logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F4CE14;
+  }
+  .header-wrapper .header-inner .header-logo-container .header-logo .filly {
+    color: #459E57;
+  }
+  .header-wrapper .header-inner .login-btn {
+    padding: 10px;
+    width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=header.css.map */

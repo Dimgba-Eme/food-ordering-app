@@ -1,19 +1,28 @@
 import React from 'react'
 import './navbar.scss'
 import menu_icon from '../assets/icons/hamburger_menu.svg'
+import cart_icon from '../assets/icons/shopping-bag.png'
+import close_icon from '../assets/icons/close_icon.png'
 
 const Navbar = () => {
     return (
         <>
-            <nav className='nav-container'>
-                <img src={menu_icon} alt='menu icon' className='menu-icon' />
-                <ul className='nav-inner'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                </ul>
-            </nav>
+            <img src={menu_icon} alt='menu icon' className='menu-icon' />
+            <div className='nav-wrapper'>
+                <nav>
+                    <ul className='nav-inner'>
+                        <img src={close_icon} alt='close icon' className='close-icon' />
+                        <li className='nav-link'>Home</li>
+                        <li className='nav-link'>About</li>
+                        <li className='nav-link'>Menu</li>
+                    </ul>
+                </nav>
+                <div className='cart-icon-container'>
+                    <img src={cart_icon} alt='cart icon' className='cart-icon' />
+                    <p className='item-count'>0</p>
+                </div>
 
+            </div>
         </>
     )
 }
