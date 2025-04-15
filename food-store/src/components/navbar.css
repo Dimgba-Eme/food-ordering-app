@@ -23,6 +23,7 @@
     left: 0;
     width: 60%;
     background-color: #fff;
+    animation: SlideIn 0.5s;
   }
   .nav-wrapper nav .nav-inner .close-icon {
     width: 25px;
@@ -54,5 +55,13 @@
     height: 18px;
     border-radius: 50%;
     text-align: center;
+  }
+}
+@keyframes SlideIn {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=navbar.css.map */

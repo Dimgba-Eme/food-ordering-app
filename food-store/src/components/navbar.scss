@@ -24,6 +24,7 @@
                  left: 0;
                  width: 60%;
                  background-color: #fff;
+                 animation: SlideIn 0.5s;
                 .close-icon {
                     width: 25px;
                     margin: 10px;
@@ -62,5 +63,14 @@
               text-align: center;
             }
         }
+    }
+}
+
+@keyframes SlideIn {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
     }
 }
