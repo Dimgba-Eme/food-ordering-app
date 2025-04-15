@@ -18,12 +18,12 @@ const Navbar = () => {
                         <li className='nav-link'>Menu</li>
                     </ul>
                 </nav>
+            </div>
                 <div className='cart-icon-container'>
                     <img src={cart_icon} alt='cart icon' className='cart-icon' />
                     <p className='item-count'>0</p>
                 </div>
 
-            </div>
         </>
     )
 }

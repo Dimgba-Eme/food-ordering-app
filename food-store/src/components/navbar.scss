@@ -9,7 +9,7 @@
     .nav-wrapper {
         margin-left: auto;
         display: flex;
-        
+
         nav {
             display: none;
             position: fixed;
@@ -19,16 +19,18 @@
             top: 0;
             width: 100%;
             min-height: 100vh;
+
             .nav-inner {
-                 top: 0;
-                 left: 0;
-                 width: 60%;
-                 background-color: #fff;
-                 animation: SlideIn 0.5s;
+                top: 0;
+                left: 0;
+                width: 60%;
+                background-color: #fff;
+                animation: SlideIn 0.5s;
+
                 .close-icon {
                     width: 25px;
                     margin: 10px;
-                    
+
                 }
 
                 .nav-link {
@@ -44,24 +46,27 @@
             }
         }
 
-        .cart-icon-container {
-               position: relative;
-            .cart-icon {
-                width: 30px;
-                margin-left: auto;
-            }
+    }
 
-            .item-count {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              background-color: tomato;
-              color: #fff;
-              width: 18px;
-              height: 18px;
-              border-radius: 50%;
-              text-align: center;
-            }
+    .cart-icon-container {
+        position: relative;
+
+
+        .cart-icon {
+            width: 30px;
+            margin-left: auto;
+        }
+
+        .item-count {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: tomato;
+            color: #fff;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            text-align: center;
         }
     }
 }
@@ -70,7 +75,63 @@
     from {
         transform: translateX(-1000px);
     }
+
     to {
         transform: translateX(0);
+    }
+}
+
+@media (min-width: 800px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+
+        nav {
+            display: flex;
+
+            .nav-inner {
+                display: flex;
+
+                .close-icon {
+                    display: none;
+                }
+
+
+                .nav-link {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-left: 15px;
+                    list-style: none;
+                }
+            }
+        }
+
+    }
+
+    .cart-icon-container {
+        position: relative;
+         margin-left: auto;
+        
+        .cart-icon {
+            width: 30px;
+        }
+
+        .item-count {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: tomato;
+            color: #fff;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            text-align: center;
+        }
     }
 }
