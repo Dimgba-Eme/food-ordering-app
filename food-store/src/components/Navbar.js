@@ -8,11 +8,11 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <img src={menu_icon} alt='menu icon' className='menu-icon' />
-            <div className='nav-wrapper'>
-                <nav>
+            <img src={menu_icon} alt='menu icon' className='menu-icon' onClick={() => setIsOpen(!isOpen)} />
+            <div className='nav-wrapper' onClick={() => setIsOpen(!isOpen)}>
+                <nav className={isOpen ? 'isOpen' : ''}>
                     <ul className='nav-inner'>
-                        <img src={close_icon} alt='close icon' className='close-icon' />
+                        <img src={close_icon} alt='close icon' className='close-icon' onClick={() => setIsOpen(!isOpen)} />
                         <li className='nav-link'>Home</li>
                         <li className='nav-link'>About</li>
                         <li className='nav-link'>Menu</li>

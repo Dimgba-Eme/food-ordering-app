@@ -11,8 +11,7 @@
         display: flex;
         
         nav {
-            display: grid;
-            border: 1px solid red;
+            display: none;
             position: fixed;
             z-index: 5;
             background-color: #00000090;
@@ -37,6 +36,10 @@
                     font-weight: bold;
                     margin-top: 20px;
                 }
+            }
+
+            &.isOpen {
+                display: flex;
             }
         }
 
