@@ -7,19 +7,36 @@
     }
 
     .nav-wrapper {
-        border: 1px solid red;
         margin-left: auto;
         display: flex;
-
+        
         nav {
+            display: grid;
+            border: 1px solid red;
+            position: fixed;
+            z-index: 5;
+            background-color: #00000090;
+            left: 0;
+            top: 0;
+            width: 100%;
+            min-height: 100vh;
             .nav-inner {
-                display: none;
-
+                 top: 0;
+                 left: 0;
+                 width: 60%;
+                 background-color: #fff;
                 .close-icon {
-                    width: 20px;
+                    width: 25px;
+                    margin: 10px;
+                    
                 }
 
-                .nav-link {}
+                .nav-link {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
             }
         }
 
