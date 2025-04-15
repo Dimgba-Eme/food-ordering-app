@@ -1,0 +1,56 @@
+.hero-container {
+  padding: 20px 10px;
+  background-image: url("../assets/images/hero_pic.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container .hero-inner .hero-intro-container h1 {
+  color: #fff;
+  font-size: 20px;
+}
+.hero-container .hero-inner .hero-intro-container p {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.hero-container .hero-inner .hero-btn {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  background-color: #F4CE14;
+  color: #fff;
+}
+@media (min-width: 800px) {
+  .hero-container {
+    padding: 20px 50px;
+    height: 100vh;
+  }
+  .hero-container .hero-inner .hero-intro-container {
+    margin-right: 350px;
+    margin-top: 50px;
+  }
+  .hero-container .hero-inner .hero-intro-container h1 {
+    font-size: 40px;
+  }
+  .hero-container .hero-inner .hero-intro-container p {
+    font-size: 18px;
+  }
+  .hero-container .hero-inner .hero-btn {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .hero-container {
+    padding: 20px 100px;
+  }
+  .hero-container .hero-inner .hero-intro-container {
+    margin-right: 500px;
+  }
+  .hero-container .hero-inner .hero-intro-container p {
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=hero.css.map */

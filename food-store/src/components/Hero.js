@@ -1,5 +1,4 @@
 import React from 'react'
-import hero_pic from '../assets/images/hero_pic.jpg'
 import './hero.scss'
 
 const Hero = () => {
@@ -13,9 +12,8 @@ const Hero = () => {
                         satisfy your cravings and elevate your dining experience, one delicious meal at a time.
                     </p>
                 </div>
-                <img src={hero_pic} alt='hero pic' className='hero-pic' />
+                <button className='hero-btn'>View Menu</button>
             </div>
-            <button>View Menu</button>
 
         </section>
     )
