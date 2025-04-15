@@ -1,5 +1,6 @@
 import React from 'react'
 import hero_pic from '../assets/images/hero_pic.jpg'
+import './hero.scss'
 
 const Hero = () => {
     return (
@@ -14,6 +15,7 @@ const Hero = () => {
                 </div>
                 <img src={hero_pic} alt='hero pic' className='hero-pic' />
             </div>
+            <button>View Menu</button>
 
         </section>
     )
