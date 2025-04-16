@@ -26,7 +26,7 @@
 @media (min-width: 800px) {
   .hero-container {
     padding: 20px 50px;
-    height: 100vh;
+    height: 80vh;
   }
   .hero-container .hero-inner .hero-intro-container {
     margin-right: 350px;
@@ -51,6 +51,6 @@
     margin-right: 500px;
   }
   .hero-container .hero-inner .hero-intro-container p {
-    line-height: 30px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=hero.css.map */
