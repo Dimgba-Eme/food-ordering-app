@@ -11,8 +11,13 @@ const Specials = () => {
             </div>
 
             <div className='specials-items-container'>
-              {specials.map((item, index) => {
-
+              {specials.map((item) => {
+                 return <div key={item.id}>
+                     <img src={item.image} alt='food item' />
+                     <h4>{item.name}</h4>
+                     <p>{item.description}</p>
+                     <p>${item.price}</p>
+                 </div>
               })}
             </div>
         </section>
