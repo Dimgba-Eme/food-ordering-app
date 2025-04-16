@@ -10,4 +10,21 @@
 }
 .explore-menu-container .explore-order-container .bicycle {
   width: 30px;
+}
+.explore-menu-container .explore-menu {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+.explore-menu-container .explore-menu::-webkit-scrollbar {
+  display: none;
+}
+.explore-menu-container .explore-menu .explore-menu-inner .menu-item-pic {
+  width: 100px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.explore-menu-container .explore-menu .explore-menu-inner .menu-item-name {
+  text-align: center;
 }/*# sourceMappingURL=exploreMenu.css.map */
