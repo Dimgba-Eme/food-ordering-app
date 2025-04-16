@@ -8,7 +8,7 @@ const specials = [
     {
         id: 4,
         image: image4,
-        name: 'crack burgers',
+        name: 'Crack burgers',
         description: 'Juicy, flavorful, and irresistibly good, this Crack Burger earns its name for being completely addictive',
         price: 15.00,
         category: 'mains'
@@ -35,7 +35,7 @@ const specials = [
     {
         id: 30,
         image: image30,
-        name: 'tiramisu',
+        name: 'Tiramisu',
         description: 'Made the proper Italian way with mascarpone, raw eggs, coffee and liquor',
         price: 10.00,
         category: 'dessert'
