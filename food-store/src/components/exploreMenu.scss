@@ -1,0 +1,21 @@
+.explore-menu-container {
+    border: 1px solid red;
+    padding: 20px 10px;
+    .explore-menu-title {
+
+    }
+
+    .explore-order-container {
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .explore-order {
+
+        }
+
+        .bicycle {
+           width: 30px;
+        }
+    }
+}
