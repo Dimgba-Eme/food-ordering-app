@@ -2,9 +2,9 @@ import React from 'react'
 
 const DisplayMenuItem = () => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 

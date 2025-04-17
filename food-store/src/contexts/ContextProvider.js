@@ -16,5 +16,5 @@ const ContextProvider = ({ children }) => {
 
 export default ContextProvider
 
-export const useItem = () => useContext(FoodContext);
+export const useItems = () => useContext(FoodContext);
 
