@@ -7,7 +7,7 @@ const FoodItems = (props) => {
             <div className='food-items-inner' key={props.id}>
                 <img src={props.image} alt='' />
                 <h1>{props.name}</h1>
-                <p>{props.price}</p>
+                <p>${props.price}</p>
             </div>
 
         </div>
