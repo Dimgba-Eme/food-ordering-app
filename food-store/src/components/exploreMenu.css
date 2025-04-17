@@ -12,6 +12,7 @@
   width: 30px;
 }
 .explore-menu-container .explore-menu {
+  justify-content: space-between;
   margin-top: 20px;
   display: flex;
   gap: 10px;

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"foodItems.css"}
+{"version":3,"sources":["foodItems.scss","foodItems.css"],"names":[],"mappings":"AAEQ;EACI,WAAA;EACA,aAAA;EACA,mBAAA;ACDZ;ADIQ;EACI,eAAA;EACA,eAAA;ACFZ;ADKQ;EACI,aAAA;EACA,eAAA;EACA,iBAAA;ACHZ;ADOI;EAEQ;IACI,aAAA;ECNd;EDSU;IACI,eAAA;ECPd;AACF","file":"foodItems.css"}
