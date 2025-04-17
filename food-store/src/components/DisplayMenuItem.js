@@ -1,6 +1,7 @@
 import React from 'react'
 import { useItems } from '../contexts/ContextProvider'
 import FoodItems from './FoodItems';
+import './displayMenuItem.scss'
 
 const DisplayMenuItem = () => {
     const { all_menu } = useItems();
