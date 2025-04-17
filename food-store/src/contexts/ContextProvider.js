@@ -1,16 +1,20 @@
-import React from 'react'
-import { createContext, useContext } from 'react'
+import React, { createContext, useContext } from 'react'
 import all_menu from '../assets/images/all_menu'
 
 const FoodContext = createContext(undefined);
 
-const ContextProvider = () => {
+const ContextProvider = ({ children }) => {
+
+  const contextValue = { all_menu }
+
   return (
-    <div>
-      
-    </div>
+    <FoodContext.Provider value={contextValue}>
+      {children}
+    </FoodContext.Provider>
   )
 }
 
 export default ContextProvider
+
+export const useItem = () => useContext(FoodContext);
 
