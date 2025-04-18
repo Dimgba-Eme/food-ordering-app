@@ -1,10 +1,12 @@
 import React from 'react'
+import DisplayCartItems from '../components/DisplayCartItems'
 
 const Cart = () => {
   return (
-    <div>
-      <p>Cart</p>
-    </div>
+    <main className='cart-container'>
+      <p>Your Cart</p>
+      <DisplayCartItems />
+    </main>
   )
 }
 

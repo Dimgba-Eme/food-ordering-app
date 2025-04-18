@@ -4,6 +4,7 @@ import menu_icon from '../assets/icons/hamburger_menu.svg'
 import cart_icon from '../assets/icons/shopping-bag.png'
 import close_icon from '../assets/icons/close_icon.png'
 import { useItems } from '../contexts/ContextProvider'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
                 </nav>
             </div>
             <div className='cart-icon-container'>
-                <img src={cart_icon} alt='cart icon' className='cart-icon' />
+                <Link to='/cart'><img src={cart_icon} alt='cart icon' className='cart-icon' /></Link>
                 <p className='item-count'>{getTotalCartItems()}</p>
             </div>
 
