@@ -28,7 +28,15 @@ const ContextProvider = ({ children }) => {
     return totalAmount;
   }
 
-  
+  const getTotalCartItem = () => {
+    let totalItem = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        totalItem += cartItems[item];
+      }
+    }
+    return totalItem;
+  }
 
   const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart }
 
