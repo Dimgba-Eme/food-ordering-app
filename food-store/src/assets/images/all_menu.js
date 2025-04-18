@@ -49,7 +49,7 @@ const all_menu = [
         image: image1,
         name: 'Cajun Shrimp and Salmon',
         price: 12.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -57,7 +57,7 @@ const all_menu = [
         image: image2,
         name: 'Chicken Chow Mein',
         price: 10.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -65,7 +65,7 @@ const all_menu = [
         image: image3,
         name: 'chicken and fries',
         price: 12.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -73,7 +73,7 @@ const all_menu = [
         image: image4,
         name: 'crack burgers',
         price: 15.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -81,7 +81,7 @@ const all_menu = [
         image: image5,
         name: 'Creamy Chicken Supreme',
         price: 9.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -89,7 +89,7 @@ const all_menu = [
         image: image6,
         name: 'Crispy Bang Salmon',
         price: 15.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -97,7 +97,7 @@ const all_menu = [
         image: image7,
         name: 'Garlic Butter Lobster Tails',
         price: 12.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -105,7 +105,7 @@ const all_menu = [
         image: image8,
         name: 'Garlic Butter Salmon',
         price: 18.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -113,7 +113,7 @@ const all_menu = [
         image: image9,
         name: 'Lime-Garlic Steamed Fish',
         price: 17.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -121,7 +121,7 @@ const all_menu = [
         image: image10,
         name: 'Pan-Seared Salmon',
         price: 19.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -129,7 +129,7 @@ const all_menu = [
         image: image11,
         name: 'Parmesan Crusted Chicken',
         price: 20.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -137,7 +137,7 @@ const all_menu = [
         image: image12,
         name: 'Pasta',
         price: 18.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -145,7 +145,7 @@ const all_menu = [
         image: image13,
         name: 'Pork Tenderloin',
         price: 15.00,
-        category: 'mains'
+        category: 'Mains'
     },
 
     {
@@ -153,7 +153,7 @@ const all_menu = [
         image: image14,
         name: 'Bruschetta',
         price: 8.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -161,7 +161,7 @@ const all_menu = [
         image: image15,
         name: 'Creamy Smothered Chicken',
         price: 10.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -169,7 +169,7 @@ const all_menu = [
         image: image16,
         name: 'Egg omelette',
         price: 7.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -177,7 +177,7 @@ const all_menu = [
         image: image17,
         name: 'Greek Salad',
         price: 9.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -185,7 +185,7 @@ const all_menu = [
         image: image18,
         name: 'Grilled Chicken',
         price: 8.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -193,7 +193,7 @@ const all_menu = [
         image: image19,
         name: 'Pork',
         price: 7.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -201,7 +201,7 @@ const all_menu = [
         image: image20,
         name: 'Stuffed Chicken Breast',
         price: 10.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -209,7 +209,7 @@ const all_menu = [
         image: image21,
         name: 'Stuffed Chicken',
         price: 8.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -217,7 +217,7 @@ const all_menu = [
         image: image22,
         name: 'Veggie Pie',
         price: 10.00,
-        category: 'appetizer'
+        category: 'Appetizers'
     },
 
     {
@@ -225,7 +225,7 @@ const all_menu = [
         image: image23,
         name: 'baklava',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -233,7 +233,7 @@ const all_menu = [
         image: image24,
         name: 'brownie',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -241,7 +241,7 @@ const all_menu = [
         image: image25,
         name: 'cake',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -249,7 +249,7 @@ const all_menu = [
         image: image26,
         name: 'creme-brulee',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -257,7 +257,7 @@ const all_menu = [
         image: image27,
         name: 'macaron',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -265,7 +265,7 @@ const all_menu = [
         image: image28,
         name: 'meringue',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -273,7 +273,7 @@ const all_menu = [
         image: image29,
         name: 'panna-cotta',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -281,7 +281,7 @@ const all_menu = [
         image: image30,
         name: 'tiramisu',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -289,7 +289,7 @@ const all_menu = [
         image: image31,
         name: 'waffle',
         price: 10.00,
-        category: 'dessert'
+        category: 'Desserts'
     },
 
     {
@@ -297,7 +297,7 @@ const all_menu = [
         image: image32,
         name: '7UP Lemon',
         price: 5.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -305,7 +305,7 @@ const all_menu = [
         image: image33,
         name: 'AQUA AIR MINERAL',
         price: 4.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -313,7 +313,7 @@ const all_menu = [
         image: image34,
         name: 'choco smoothie',
         price: 6.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -321,7 +321,7 @@ const all_menu = [
         image: image35,
         name: 'Coca-Cola',
         price: 8.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -329,7 +329,7 @@ const all_menu = [
         image: image36,
         name: 'Favorite Soda',
         price: 3.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -337,7 +337,7 @@ const all_menu = [
         image: image37,
         name: 'Homemade Fresh Lemonade',
         price: 5.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -345,7 +345,7 @@ const all_menu = [
         image: image38,
         name: 'Sprite',
         price: 4.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -353,7 +353,7 @@ const all_menu = [
         image: image39,
         name: 'Strawberry Banana Smoothie',
         price: 6.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -361,7 +361,7 @@ const all_menu = [
         image: image40,
         name: 'Strawberry Lemon Smoothie',
         price: 5.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -369,7 +369,7 @@ const all_menu = [
         image: image41,
         name: 'Suco Verde Detox ',
         price: 4.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 
     {
@@ -377,7 +377,7 @@ const all_menu = [
         image: image42,
         name: 'Your Favorite Soda',
         price: 7.00,
-        category: 'drinks'
+        category: 'Drinks'
     },
 ]
 

@@ -3,7 +3,8 @@ import { useItems } from '../contexts/ContextProvider'
 import FoodItems from './FoodItems';
 import './displayMenuItem.scss'
 
-const DisplayMenuItem = () => {
+const DisplayMenuItem = (props) => {
+    const {category} = props;
     const { all_menu } = useItems();
     return (
         <section className='display-menu-container'>
@@ -13,7 +14,10 @@ const DisplayMenuItem = () => {
 
             <div className='food-item-container'>
                 {all_menu.map((item, index) => {
-                    return <FoodItems key={index} id={item.id} image={item.image} name={item.name} price={item.price} />
+                    if(category === "All" || category === item.category) {
+                        return <FoodItems key={index} id={item.id} image={item.image} name={item.name} price={item.price} />
+
+                    }
                 })}
             </div>
         </section>

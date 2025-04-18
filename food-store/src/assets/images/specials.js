@@ -1,5 +1,5 @@
 import image4 from '../images/image4.jpeg'
-import image15 from '../images/image15.jpeg'
+import image18 from '../images/image18.jpeg'
 import image20 from '../images/image20.jpeg'
 import image30 from '../images/image30.jpg'
 
@@ -15,11 +15,11 @@ const specials = [
     },
 
     {
-        id: 15,
-        image: image15,
-        name: 'Creamy Smothered Chicken',
-        description: 'These chicken thighs are smothered in the most heavenly gravy filled with peppers, onions, and mushrooms',
-        price: 10.00,
+        id: 18,
+        image: image18,
+        name: 'Grilled Chicken',
+        description: 'These chicken thighs are grilled in the most heavenly gravy filled with peppers, onions, and mushrooms',
+        price: 8.00,
         category: 'appetizer'
     },
 
