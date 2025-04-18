@@ -17,7 +17,7 @@ const ContextProvider = ({ children }) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
   }
 
-  const contextValue = { all_menu }
+  const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart }
 
   return (
     <FoodContext.Provider value={contextValue}>
