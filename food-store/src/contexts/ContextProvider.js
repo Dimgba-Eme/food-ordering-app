@@ -38,9 +38,9 @@ const ContextProvider = ({ children }) => {
     return totalItem;
   }
 
-  useEffect(() => {
-         console.log(cartItems)
-  }, [cartItems])
+  // useEffect(() => {
+  //        console.log(cartItems)
+  // }, [cartItems])
 
   const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart, getTotalCartAmount, getTotalCartItems }
 

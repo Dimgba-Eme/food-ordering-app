@@ -1,11 +1,14 @@
 import React from 'react'
+import './displayCartItem.scss'
 
 const DisplayCartItems = () => {
-  return (
-    <div>
-      <h1>cart items</h1>
-    </div>
-  )
+    return (
+        <section className='cart-items-container'>
+          <div className='cart-items-inner'>
+
+          </div>
+        </section>
+    )
 }
 
 export default DisplayCartItems
