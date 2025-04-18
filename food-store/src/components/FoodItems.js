@@ -3,6 +3,9 @@ import './foodItems.scss'
 import icon_add_to_cart from '../assets/icons/icon-add-to-cart.svg'
 import icon_decrement_quantity from '../assets/icons/icon-decrement-quantity.svg'
 import icon_increment_quantity from '../assets/icons/icon-increment-quantity.svg'
+import { useItems } from '../contexts/ContextProvider'
+
+const {cartItems, setCartItems, addToCart, removeFromCart} = useItems();
 
 const FoodItems = (props) => {
     const [itemCount, setItemCount] = useState(0)
