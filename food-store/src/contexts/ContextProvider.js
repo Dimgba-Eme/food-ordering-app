@@ -38,7 +38,7 @@ const ContextProvider = ({ children }) => {
     return totalItem;
   }
 
-  const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart }
+  const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart, getTotalCartAmount, getTotalCartItem }
 
   return (
     <FoodContext.Provider value={contextValue}>
