@@ -3,11 +3,11 @@ import './navbar.scss'
 import menu_icon from '../assets/icons/hamburger_menu.svg'
 import cart_icon from '../assets/icons/shopping-bag.png'
 import close_icon from '../assets/icons/close_icon.png'
-// import { useItems } from '../contexts/ContextProvider'
+import { useItems } from '../contexts/ContextProvider'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    // const { addToCart } = useItems();
+    const { getTotalCartItems } = useItems();
     return (
         <>
             <img src={menu_icon} alt='menu icon' className='menu-icon' onClick={() => setIsOpen(!isOpen)} />
@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className='cart-icon-container'>
                 <img src={cart_icon} alt='cart icon' className='cart-icon' />
-                <p className='item-count'>{0}</p>
+                <p className='item-count'>{getTotalCartItems()}</p>
             </div>
 
         </>
