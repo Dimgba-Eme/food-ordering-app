@@ -1,12 +1,37 @@
 .cart-items-container {
     padding: 20px 0;
+
     .cart-items-inner {
         .cart-items-info {
-               display: none;
+            display: none;
         }
 
-        .cart-items-added {
+        .cart-total-items-container {
+            .cart-total-items-inner {
+                padding: 10px 0;
+                display: grid;
+                grid-template-columns: 0.7fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                border-bottom: 1px solid #ccc;
 
+                .cart-item-pic {
+                    width: 40px;
+                }
+
+                .cart-item-name {
+                    font-size: 12px;
+                }
+
+                .plus-minus-icon {
+                    width: 10px;
+                }
+
+                .trash-icon {
+                    width: 20px;
+                }
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 import all_menu from '../assets/images/all_menu'
 
 const FoodContext = createContext(undefined);
@@ -15,6 +15,10 @@ const ContextProvider = ({ children }) => {
 
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
+  }
+
+  const deleteFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] = 0 }))
   }
 
   const getTotalCartAmount = () => {
@@ -38,11 +42,8 @@ const ContextProvider = ({ children }) => {
     return totalItem;
   }
 
-  // useEffect(() => {
-  //        console.log(cartItems)
-  // }, [cartItems])
 
-  const contextValue = { all_menu, cartItems, setCartItems, addToCart, removeFromCart, getTotalCartAmount, getTotalCartItems }
+  const contextValue = { all_menu, cartItems, setCartItems, addToCart, deleteFromCart, removeFromCart, getTotalCartAmount, getTotalCartItems }
 
   return (
     <FoodContext.Provider value={contextValue}>
