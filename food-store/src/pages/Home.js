@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Specials from '../components/Specials'
 import ExploreMenu from '../components/ExploreMenu'
 import DisplayMenuItem from '../components/DisplayMenuItem'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
       <Specials />
       <ExploreMenu category={category} setCategory={setCategory} />
       <DisplayMenuItem category={category} />
+      <Testimonials />
     </main>
   )
 }
