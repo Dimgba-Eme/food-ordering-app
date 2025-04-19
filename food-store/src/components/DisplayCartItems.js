@@ -6,12 +6,13 @@ import plus_icon from '../assets/icons/plus.png'
 import trash_icon from '../assets/icons/trash_icon.png'
 import { Link } from 'react-router-dom'
 
+
+
 const DisplayCartItems = () => {
     const { all_menu, cartItems, getTotalCartAmount, removeFromCart, addToCart, deleteFromCart } = useItems();
     return (
         <section className='cart-items-container'>
             <div className='cart-items-inner'>
-
                 <div className='cart-total-items-container'>
                     {all_menu.map((item) => {
                         if (cartItems[item.id] > 0) {

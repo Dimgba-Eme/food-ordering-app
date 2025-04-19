@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [linkNav, setLinkNav] = useState("home")
     const { getTotalCartItems } = useItems();
     return (
         <>
@@ -16,9 +17,10 @@ const Navbar = () => {
                 <nav className={isOpen ? 'isOpen' : ''}>
                     <ul className='nav-inner'>
                         <img src={close_icon} alt='close icon' className='close-icon' onClick={() => setIsOpen(!isOpen)} />
-                        <li className='nav-link'>Home</li>
-                        <li className='nav-link'>About</li>
-                        <li className='nav-link'>Menu</li>
+                        <Link to='/' onClick={() => setLinkNav("home")} className={linkNav === 'home' ? 'active' : ''}>Home</Link>
+                        <a href='#' onClick={() => setLinkNav("about")} className={linkNav === 'about' ? 'active' : ''}>About</a>
+                        <a href='#' onClick={() => setLinkNav("menu")} className={linkNav === 'menu' ? 'active' : ''}>Menu</a>
+                        <a href='#' onClick={() => setLinkNav("contact")} className={linkNav === 'contact' ? 'active' : ''}>Contact</a>
                     </ul>
                 </nav>
             </div>

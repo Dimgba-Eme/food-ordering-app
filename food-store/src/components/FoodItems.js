@@ -25,7 +25,8 @@ const FoodItems = (props) => {
                         <img src={icon_decrement_quantity} alt='icon decrement' className='icon-plus-minus' onClick={() => removeFromCart(props.id)} />
                         <p className='item-count'>{cartItems[props.id]}</p>
                         <img src={icon_increment_quantity} alt='icon decrement' className='icon-plus-minus' onClick={() => addToCart(props.id)} />
-                    </div>}
+                    </div>
+                }
 
                 <h1 className='item-title'>{props.name}</h1>
                 <p className='item-price'>${props.price}</p>
