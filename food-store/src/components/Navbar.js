@@ -18,9 +18,9 @@ const Navbar = () => {
                     <ul className='nav-inner'>
                         <img src={close_icon} alt='close icon' className='close-icon' onClick={() => setIsOpen(!isOpen)} />
                         <Link to='/' onClick={() => setLinkNav("home")} className={linkNav === 'home' ? 'active' : ''}>Home</Link>
-                        <a href='#' onClick={() => setLinkNav("about")} className={linkNav === 'about' ? 'active' : ''}>About</a>
-                        <a href='#' onClick={() => setLinkNav("menu")} className={linkNav === 'menu' ? 'active' : ''}>Menu</a>
-                        <a href='#' onClick={() => setLinkNav("contact")} className={linkNav === 'contact' ? 'active' : ''}>Contact</a>
+                        <a href='#about-us' onClick={() => setLinkNav("about")} className={linkNav === 'about' ? 'active' : ''}>About</a>
+                        <a href='#menu' onClick={() => setLinkNav("menu")} className={linkNav === 'menu' ? 'active' : ''}>Menu</a>
+                        <a href='#footer' onClick={() => setLinkNav("contact")} className={linkNav === 'contact' ? 'active' : ''}>Contact</a>
                     </ul>
                 </nav>
             </div>

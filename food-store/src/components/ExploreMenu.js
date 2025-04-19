@@ -6,7 +6,7 @@ import bicycle from '../assets/images/bicycle.jpg'
 const ExploreMenu = (props) => {
     const { category, setCategory } = props;
     return (
-        <section className='explore-menu-container'>
+        <section id='menu' className='explore-menu-container'>
             <h1 className='explore-menu-title'>Explore Our Menu</h1>
             <div className='explore-order-container'>
                 <h4 className='explore-order'>Order for Delivery!</h4>
