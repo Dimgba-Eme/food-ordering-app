@@ -14,7 +14,7 @@ const testimonials_list = [
         image: user_one,
         name: "Dimson Black",
         rating: rating,
-        comment: "I ordered my breakfast this morning and dinner tonight from EattyFilly.Delivery was fast and the food still hot.",
+        comment: "I ordered my breakfast this morning and dinner tonight from EattyFilly. Delivery was fast and the food still hot.",
     },
 
     {

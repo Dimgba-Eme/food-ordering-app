@@ -22,6 +22,7 @@
   border: 0;
   background-color: #F4CE14;
   color: #fff;
+  cursor: pointer;
 }
 @media (min-width: 800px) {
   .hero-container {

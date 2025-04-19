@@ -12,7 +12,7 @@ const Hero = () => {
                         satisfy your cravings and elevate your dining experience, one delicious meal at a time.
                     </p>
                 </div>
-                <button className='hero-btn'>View Menu</button>
+                <a href='#menu'><button className='hero-btn'>View Menu</button></a> 
             </div>
 
         </section>
