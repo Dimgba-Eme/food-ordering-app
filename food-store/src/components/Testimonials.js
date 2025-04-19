@@ -1,5 +1,6 @@
 import React from 'react'
 import './testimonials.scss'
+import testimonials_list from '../assets/images/testimonials_list'
 
 const Testimonials = () => {
     return (
