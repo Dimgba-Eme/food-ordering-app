@@ -2,5 +2,18 @@
   padding: 20px 10px;
 }
 .cart-container .cart-title {
-  font-size: 25px;
+  font-size: 20px;
+}
+@media (min-width: 800px) {
+  .cart-container {
+    padding: 20px 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .cart-container {
+    padding: 20px 100px;
+  }
+  .cart-container .cart-title {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=cart.css.map */

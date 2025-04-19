@@ -1,6 +1,19 @@
 .cart-container {
     padding: 20px 10px;
+
     .cart-title {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    @media (min-width: 800px) {
+        padding: 20px 50px;
+    }
+
+    @media (min-width: 1000px) {
+        padding: 20px 100px;
+
+        .cart-title {
+            font-size: 30px;
+        }
     }
 }
