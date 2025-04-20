@@ -50,7 +50,7 @@ const DisplayCartItems = () => {
                     </div>
 
                     <div className='checkout-btn-container'>
-                        <Link to='/order'><button className='checkout-btn'>PROCEED TO CHECKOUT</button></Link>
+                        <Link to='/order' onClick={() => window.scrollTo(0, 0)}><button className='checkout-btn'>PROCEED TO CHECKOUT</button></Link>
                     </div>
 
                 </div>

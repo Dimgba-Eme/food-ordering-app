@@ -1,0 +1,102 @@
+.place-order-container {
+  padding: 20px 10px;
+}
+.place-order-container .place-order-inner .delivery-title {
+  margin-bottom: 20px;
+}
+.place-order-container .place-order-inner form .form-container .form-inner .doubles-container {
+  display: flex;
+  gap: 10px;
+}
+.place-order-container .place-order-inner form .form-container .form-inner input {
+  padding: 10px;
+  width: 100%;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container {
+  margin-top: 100px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .cart-total-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .subtotal-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .shipping-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .grand-total-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .order-btn-container {
+  margin-top: 40px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .order-btn-container .checkout-btn {
+  width: 200px;
+  padding: 15px;
+  background-color: tomato;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container {
+  margin-top: 50px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container .cash-payment {
+  border: 1px solid #ccc;
+  width: 310px;
+  padding: 10px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container .cash-payment span {
+  margin-left: 30px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container .stripe-payment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 310px;
+}
+.place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container .stripe-payment img {
+  width: 40px;
+  margin-left: 30px;
+}
+@media (min-width: 800px) {
+  .place-order-container {
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .place-order-container {
+    padding: 30px 100px;
+  }
+  .place-order-container .place-order-inner .delivery-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .place-order-container .place-order-inner form .form-container {
+    display: flex;
+    gap: 200px;
+  }
+  .place-order-container .place-order-inner form .form-container .cart-total-container {
+    margin-top: -15px;
+  }
+  .place-order-container .place-order-inner form .form-container .cart-total-container .cart-total-title {
+    font-size: 25px;
+  }
+  .place-order-container .place-order-inner form .form-container .cart-total-container .order-btn-container {
+    margin-top: 40px;
+  }
+  .place-order-container .place-order-inner form .form-container .cart-total-container .payment-method-container .payment-method-title {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=placeOrder.css.map */
