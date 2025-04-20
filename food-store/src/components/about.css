@@ -1,3 +1,47 @@
+.about-container {
+  padding: 20px 10px;
+  border: 1px solid red;
+}
+.about-container h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.about-container .about-inner {
+  padding: 20px 0;
+}
 .about-container .about-inner img {
   width: 100%;
+  border-radius: 15px;
+}
+.about-container .about-inner p {
+  margin-top: 20px;
+}
+@media (min-width: 800px) {
+  .about-container {
+    padding: 20px 50px;
+  }
+  .about-container h1 {
+    font-size: 30px;
+  }
+  .about-container .about-inner {
+    padding: 40px 0;
+    display: flex;
+    gap: 30px;
+  }
+  .about-container .about-inner img {
+    width: 50%;
+    border-radius: 15px;
+  }
+  .about-container .about-inner p {
+    margin-top: 0;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-container {
+    padding: 20px 100px;
+  }
+  .about-container h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=about.css.map */
