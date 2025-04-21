@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './placeOrder.scss'
 import { useItems } from '../contexts/ContextProvider'
 import { Link } from 'react-router-dom'
@@ -16,14 +16,25 @@ const PlaceOrder = () => {
     const [zipcode, setZipcode] = useState('');
     const [country, setCountry] = useState('');
     const [phone, setPhone] = useState('');
-    const [cash, setCash] = useState('');
-    const [stripe, setStripe] = useState('');
+    const [cash, setCash] = useState();
+    const [stripe, setStripe] = useState();
 
     const { getTotalCartAmount } = useItems();
+
+    const isFormValid = () => {
+        return (
+            firstName && lastName && email && validateEmail(email) && street && city && state && zipcode && country && phone && getTotalCartAmount()
+        )
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
     }
+
+    useEffect(() => {
+        document.title = "Order | EattyFilly"
+    }, [])
+
     return (
         <main className='place-order-container'>
             <div className='place-order-inner'>
@@ -90,7 +101,7 @@ const PlaceOrder = () => {
 
                                 <div className='cash-payment'>
                                     <label htmlFor='cash'>
-                                        <input type='radio' id='cash' value={cash} onChange={(e) => setCash(e.target.value)} />
+                                        <input type='radio' id='cash' value={cash} onChange={(e) => setCash(e.target.value)} checked />
                                         <span>Cash on Delivery</span>
                                     </label>
                                 </div>
@@ -108,7 +119,7 @@ const PlaceOrder = () => {
                             </div>
 
                             <div className='order-btn-container'>
-                                <Link to='/stripe'><button className='checkout-btn'>Place Order</button></Link>
+                                <Link><button type='submit' disabled={!isFormValid()} className='checkout-btn'>Place Order</button></Link>
                             </div>
 
                         </div>
