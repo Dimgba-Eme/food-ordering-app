@@ -5,12 +5,16 @@ import PlaceOrder from "./pages/PlaceOrder";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import LoginPopup from "./components/LoginPopup";
+import { useState } from "react";
 
 
 function App() {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <>
-      <Header />
+      {showLogin ? <LoginPopup /> : <></>}
+      <Header setShowLogin={setShowLogin} />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
