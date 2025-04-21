@@ -1,50 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './placeOrder.scss'
 import { useItems } from '../contexts/ContextProvider'
 import { Link } from 'react-router-dom'
 import stripe_logo from '../assets/icons/stripe_logo.png'
+import { validateEmail } from '../components/utils'
 
 const PlaceOrder = () => {
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [street, setStreet] = useState('');
+    const [city, setCity] = useState('');
+    const [state, setState] = useState('');
+    const [zipcode, setZipcode] = useState('');
+    const [country, setCountry] = useState('');
+    const [phone, setPhone] = useState('');
+    const [cash, setCash] = useState('');
+    const [stripe, setStripe] = useState('');
+
     const { getTotalCartAmount } = useItems();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
     return (
         <main className='place-order-container'>
             <div className='place-order-inner'>
                 <h3 className='delivery-title'>Delivery Information</h3>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className='form-container'>
 
                         <div className='form-inner'>
                             <div className='doubles-container'>
-                                <input type='text' placeholder='First name' />
-                                <input type='text' placeholder='Last name' />
+                                <input type='text' placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                                <input type='text' placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
                             </div>
                             <br />
 
                             <div className='email-container'>
-                                <input type='email' placeholder='Email' />
+                                <input type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
                             <br />
 
                             <div className='street-container'>
-                                <input type='text' placeholder='Street' />
+                                <input type='text' placeholder='Street' value={street} onChange={(e) => setStreet(e.target.value)} />
                             </div>
                             <br />
 
                             <div className='doubles-container'>
-                                <input type='text' placeholder='City' />
-                                <input type='text' placeholder='State' />
+                                <input type='text' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} />
+                                <input type='text' placeholder='State' value={state} onChange={(e) => setState(e.target.value)} />
                             </div>
                             <br />
 
                             <div className='doubles-container'>
-                                <input type='number' placeholder='Zipcode' />
-                                <input type='text' placeholder='Country' />
+                                <input type='number' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} />
+                                <input type='text' placeholder='Country' value={country} onChange={(e) => setCountry(e.target.value)} />
                             </div>
                             <br />
 
                             <div className='phone-container'>
-                                <input type='tel' placeholder='Phone' />
+                                <input type='tel' placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
                             </div>
 
                         </div>
@@ -72,7 +90,7 @@ const PlaceOrder = () => {
 
                                 <div className='cash-payment'>
                                     <label htmlFor='cash'>
-                                        <input type='radio' id='cash' />
+                                        <input type='radio' id='cash' value={cash} onChange={(e) => setCash(e.target.value)} />
                                         <span>Cash on Delivery</span>
                                     </label>
                                 </div>
@@ -81,7 +99,7 @@ const PlaceOrder = () => {
 
                                 <div className='stripe-payment'>
                                     <label htmlFor='stripe'>
-                                        <input type='radio' id='stripe' />
+                                        <input type='radio' id='stripe' value={stripe} onChange={(e) => setStripe(e.target.value)} />
                                         <img src={stripe_logo} alt='stripe logo' />
                                     </label>
                                 </div>
