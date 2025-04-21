@@ -3,7 +3,9 @@ import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 import './header.scss'
 
-const Header = () => {
+const Header = (props) => {
+    const { setShowLogin } = props;
+   
     return (
         <header className='header-wrapper'>
             <div className='header-inner'>
@@ -12,7 +14,7 @@ const Header = () => {
                 </div>
                 <Navbar />
 
-                <button className='login-btn'>Login</button>
+                <button onClick={() => setShowLogin(true)} className='login-btn'>Login</button>
             </div>
         </header>
     )
