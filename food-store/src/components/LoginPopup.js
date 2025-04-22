@@ -3,6 +3,12 @@ import './loginPopup.scss'
 import close_icon from '../assets/icons/close_icon.png'
 import { validateEmail } from './utils'
 
+const PasswordErrorMessage = () => {
+    return (
+        <p style={{ color: "tomato" }}>Password must not be less than 8 characters</p>
+    )
+}
+
 const LoginPopup = ({ setShowLogin }) => {
 
     const [name, setName] = useState('');
@@ -13,6 +19,12 @@ const LoginPopup = ({ setShowLogin }) => {
     })
 
     const [currentState, setCurrentState] = useState("Login");
+
+    const isFormValid = () => {
+        return (
+            name && email && password.value.length >= 8 && validateEmail(email)
+        )
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,7 +54,7 @@ const LoginPopup = ({ setShowLogin }) => {
                     <br />
                     <input type='password' placeholder='Enter password' value={password.value} onChange={(e) => setPassword({ ...password, value: e.target.value })} onBlur={() => setPassword({ ...password, isFocused: true })} />
                     <br />
-                    <button type='submit'>{currentState === "Login" ? "Sign In" : "Create Account"}</button>
+                    <button disabled={isFormValid()} type='submit'>{currentState === "Login" ? "Sign In" : "Create Account"}</button>
 
                     {currentState === "Login"
                         ?
