@@ -11,6 +11,7 @@
 .place-order-container .place-order-inner form .form-container .form-inner input {
   padding: 10px;
   width: 100%;
+  outline-color: tomato;
 }
 .place-order-container .place-order-inner form .form-container .cart-total-container {
   margin-top: 100px;
@@ -85,10 +86,11 @@
   }
   .place-order-container .place-order-inner form .form-container {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
   }
   .place-order-container .place-order-inner form .form-container .cart-total-container {
     margin-top: -15px;
+    width: 50%;
   }
   .place-order-container .place-order-inner form .form-container .cart-total-container .cart-total-title {
     font-size: 25px;

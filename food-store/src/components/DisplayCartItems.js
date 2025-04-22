@@ -41,12 +41,12 @@ const DisplayCartItems = () => {
 
                     <div className='shipping-container'>
                         <p className='shipping-title'>Shipping Fee</p>
-                        <p>${0}</p>
+                        <p>${getTotalCartAmount() === 0 ? 0 : 5}</p>
                     </div>
 
                     <div className='grand-total-container'>
                         <h3 className='grand-total-title'>Total</h3>
-                        <h3>${getTotalCartAmount()}</h3>
+                        <h3>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 5}</h3>
                     </div>
 
                     <div className='checkout-btn-container'>

@@ -63,6 +63,7 @@
   }
   .login-container .login-inner form button {
     width: 200px;
+    cursor: pointer;
   }
 }
 @media (min-width: 1000px) {

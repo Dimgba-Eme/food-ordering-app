@@ -18,6 +18,7 @@
                     input {
                         padding: 10px;
                         width: 100%;
+                        outline-color: tomato;
                     }
                 }
 
@@ -110,10 +111,11 @@
             form {
                 .form-container {
                     display: flex;
-                    gap: 200px;
+                    justify-content: space-between;
 
                     .cart-total-container {
                         margin-top: -15px;
+                        width: 50%;
 
                         .cart-total-title {
                             font-size: 25px;

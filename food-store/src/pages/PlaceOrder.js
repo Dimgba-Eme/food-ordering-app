@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './placeOrder.scss'
 import { useItems } from '../contexts/ContextProvider'
-import { Link } from 'react-router-dom'
 import stripe_logo from '../assets/icons/stripe_logo.png'
 import { validateEmail } from '../components/utils'
 
@@ -23,12 +22,26 @@ const PlaceOrder = () => {
 
     const isFormValid = () => {
         return (
-            firstName && lastName && email && validateEmail(email) && street && city && state && zipcode && country && phone && getTotalCartAmount()
+            firstName && lastName && email && validateEmail(email) && street && city && state && zipcode && country && phone && getTotalCartAmount() > 0
         )
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert("Order received!")
+        clearForm();
+    }
+
+    const clearForm = () => {
+        setFirstName('')
+        setLastName('')
+        setEmail('')
+        setStreet('')
+        setCity('')
+        setState('')
+        setZipcode('')
+        setCountry('')
+        setPhone('')
     }
 
     useEffect(() => {
@@ -67,7 +80,7 @@ const PlaceOrder = () => {
                             <br />
 
                             <div className='doubles-container'>
-                                <input type='number' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} />
+                                <input type='text' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} />
                                 <input type='text' placeholder='Country' value={country} onChange={(e) => setCountry(e.target.value)} />
                             </div>
                             <br />
@@ -87,12 +100,12 @@ const PlaceOrder = () => {
 
                             <div className='shipping-container'>
                                 <p className='shipping-title'>Shipping Fee</p>
-                                <p>${0}</p>
+                                <p>${getTotalCartAmount() === 0 ? 0 : 5}</p>
                             </div>
 
                             <div className='grand-total-container'>
                                 <h3 className='grand-total-title'>Total</h3>
-                                <h3>${getTotalCartAmount()}</h3>
+                                <h3>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 5}</h3>
                             </div>
 
                             <div className='payment-method-container'>
@@ -119,7 +132,7 @@ const PlaceOrder = () => {
                             </div>
 
                             <div className='order-btn-container'>
-                                <Link><button type='submit' disabled={!isFormValid()} className='checkout-btn'>Place Order</button></Link>
+                                <button type='submit' disabled={!isFormValid()} className='checkout-btn'>Place Order</button>
                             </div>
 
                         </div>
