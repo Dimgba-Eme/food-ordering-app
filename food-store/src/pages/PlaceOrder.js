@@ -61,35 +61,35 @@ const PlaceOrder = () => {
 
                         <div className='form-inner'>
                             <div className='doubles-container'>
-                                <input type='text' ref={infoRef} placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-                                <input type='text' placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                                <input type='text' ref={infoRef} placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+                                <input type='text' placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} required />
                             </div>
                             <br />
 
                             <div className='email-container'>
-                                <input type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <input type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
                             </div>
                             <br />
 
                             <div className='street-container'>
-                                <input type='text' placeholder='Street' value={street} onChange={(e) => setStreet(e.target.value)} />
+                                <input type='text' placeholder='Street' value={street} onChange={(e) => setStreet(e.target.value)} required />
                             </div>
                             <br />
 
                             <div className='doubles-container'>
-                                <input type='text' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} />
-                                <input type='text' placeholder='State' value={state} onChange={(e) => setState(e.target.value)} />
+                                <input type='text' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} required />
+                                <input type='text' placeholder='State' value={state} onChange={(e) => setState(e.target.value)} required />
                             </div>
                             <br />
 
                             <div className='doubles-container'>
-                                <input type='text' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} />
-                                <input type='text' placeholder='Country' value={country} onChange={(e) => setCountry(e.target.value)} />
+                                <input type='text' placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} required />
+                                <input type='text' placeholder='Country' value={country} onChange={(e) => setCountry(e.target.value)} required />
                             </div>
                             <br />
 
                             <div className='phone-container'>
-                                <input type='tel' placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
+                                <input type='tel' placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} required />
                             </div>
 
                         </div>
