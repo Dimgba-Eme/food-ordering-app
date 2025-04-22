@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './placeOrder.scss'
 import { useItems } from '../contexts/ContextProvider'
 import stripe_logo from '../assets/icons/stripe_logo.png'
@@ -44,8 +44,11 @@ const PlaceOrder = () => {
         setPhone('')
     }
 
+    const infoRef = useRef();
+
     useEffect(() => {
         document.title = "Order | EattyFilly"
+        infoRef.current.focus();
     }, [])
 
     return (
@@ -58,7 +61,7 @@ const PlaceOrder = () => {
 
                         <div className='form-inner'>
                             <div className='doubles-container'>
-                                <input type='text' placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                                <input type='text' ref={infoRef} placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                                 <input type='text' placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
                             </div>
                             <br />
