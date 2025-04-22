@@ -20,8 +20,6 @@ const Footer = () => {
 
       <p className='rights'>All rights reserved by EattyFilly, 2025.</p>
 
-
-
     </footer>
   )
 }

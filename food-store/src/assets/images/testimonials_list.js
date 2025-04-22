@@ -4,11 +4,6 @@ import user_three from '../images/user-3.jpg'
 
 import rating from '../icons/rating.png'
 
-
-
-
-
-
 const testimonials_list = [
     {
         image: user_one,
