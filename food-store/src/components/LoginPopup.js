@@ -46,7 +46,7 @@ const LoginPopup = ({ setShowLogin }) => {
     useEffect(() => {
         infoRef.current.focus();
         document.title = "Login | EattyFilly"
-    })
+    }, [])
 
     return (
         <div className='login-container'>
