@@ -121,7 +121,6 @@ const PlaceOrder = () => {
                                         <span>Cash on Delivery</span>
                                     </label>
                                 </div>
-
                                 <br />
 
                                 <div className='stripe-payment'>
@@ -130,14 +129,11 @@ const PlaceOrder = () => {
                                         <img src={stripe_logo} alt='stripe logo' />
                                     </label>
                                 </div>
-
-
                             </div>
 
                             <div className='order-btn-container'>
                                 <button type='submit' disabled={!isFormValid()} className='checkout-btn'>Place Order</button>
                             </div>
-
                         </div>
                     </div>
                 </form>
